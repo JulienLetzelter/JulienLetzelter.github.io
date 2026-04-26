@@ -1,9 +1,6 @@
 const i18n = {
   en: {
-    navFeatures: "Features",
-    navScreenshots: "Screenshots",
-    navPricing: "Pricing",
-    navPrivacy: "Privacy",
+    navLegal: "Legal information",
     downloadCta: "Download",
     heroEyebrow: "iOS app",
     heroTitle: "Take back control of your time.",
@@ -25,26 +22,29 @@ const i18n = {
     feature4Body:
       "You keep control with local storage, export tools, and account deletion options.",
     screensTitle: "App screenshots",
-    screensIntro:
-      "The gallery changes automatically depending on your selected language.",
-    pricingTitle: "Start free. Upgrade when you want deeper insights.",
-    freeTitle: "Free",
-    free1: "Core map and day-level tracking",
-    free2: "Up to 6 place categories",
-    free3: "Up to 6 movement categories",
-    premiumTitle: "Premium",
-    premiumPrice: "$1.99/month",
-    premium1: "Detailed Summary and Trends analytics",
-    premium2: "Transport footprint analysis",
-    premium3: "Data export tools",
-    premium4: "Unlimited categories",
-    trialCta: "Start free trial",
-    pricingNote: "Cancel anytime without fees.",
-    footerTagline: "Personal life analytics with privacy by design.",
     backHome: "Home",
-    privacyPageTitle: "Privacy Policy",
-    privacyPageIntro:
-      "This page contains the official privacy policy text for Tempo.",
+    legalPageTitle: "Legal information",
+    mentionsLegalesTitle: "Legal notice",
+    privacyPolicySectionTitle: "Privacy policy",
+    legalPublisherLabel: "Publisher",
+    legalEmailLabel: "Email",
+    legalAppDescription: "Mobile application for location analysis.",
+    legalIpLabel: "Intellectual Property",
+    legalIpBody:
+      "The entire application and its content are protected by copyright. Any reproduction or representation, total or partial, is prohibited without prior authorization.",
+    termsOfUseTitle: "Terms of use",
+    termsOfUseAcceptanceTitle: "Acceptance of Terms",
+    termsOfUseAcceptanceBody:
+      "By using the Tempo application, you accept these terms of service and the privacy policy. If you do not accept these terms, please do not use the application.",
+    termsOfUseAuthorizedTitle: "Authorized use",
+    termsOfUseAuthorizedBody:
+      "The application must be used in accordance with its purpose (location tracking and personal analysis) and in compliance with applicable laws. Any abusive, fraudulent, or contrary to public order use is prohibited.",
+    termsOfUseLiabilityTitle: "Liability",
+    termsOfUseLiabilityBody:
+      "The publisher cannot be held responsible for direct or indirect damages resulting from the use of the application, including data loss, service interruption, or technical malfunction. The user is solely responsible for the use they make of their personal data.",
+    termsOfUseEstimatesTitle: "Estimates and Uncertainties",
+    termsOfUseEstimatesBody:
+      "All values present in the application, whether for visits or movements (duration, position, start and end times), are estimates subject to uncertainties inherent in geolocation technologies and processing algorithms. These values should not be considered perfectly accurate and cannot under any circumstances be used as evidence in a legal, judicial, or administrative context. The user acknowledges and accepts that this data is provided for informational purposes only.",
     ppDataCollectionTitle: "Data Collection",
     ppDataCollectionBody:
       "All your data (GPS location, travel and visit history, personalized categories, user preferences) is stored locally on your device only and is not accessible remotely. Only the following information is stored on our servers: your login email, your subscription status, your account creation date, and your last login date. This minimal data is necessary to manage your account and subscription.",
@@ -72,10 +72,7 @@ const i18n = {
     ppLastUpdated: "Last updated: December 16, 2025",
   },
   fr: {
-    navFeatures: "Fonctionnalites",
-    navScreenshots: "Captures",
-    navPricing: "Tarifs",
-    navPrivacy: "Confidentialite",
+    navLegal: "Informations légales",
     downloadCta: "Telecharger",
     heroEyebrow: "Application iOS",
     heroTitle: "Reprenez le controle de votre temps.",
@@ -98,27 +95,29 @@ const i18n = {
     feature4Body:
       "Vous gardez le controle avec le stockage local, l'export de donnees et la suppression du compte.",
     screensTitle: "Captures de l'application",
-    screensIntro:
-      "La galerie change automatiquement selon la langue selectionnee.",
-    pricingTitle:
-      "Commencez gratuitement. Passez a Premium quand vous voulez des analyses plus avancees.",
-    freeTitle: "Gratuit",
-    free1: "Carte principale et suivi journalier",
-    free2: "Jusqu'a 6 categories de lieux",
-    free3: "Jusqu'a 6 categories de deplacements",
-    premiumTitle: "Premium",
-    premiumPrice: "1,99 EUR/mois",
-    premium1: "Analyses detaillees Synthese et Tendances",
-    premium2: "Analyse de l'empreinte transport",
-    premium3: "Outils d'export de donnees",
-    premium4: "Categories illimitees",
-    trialCta: "Demarrer l'essai gratuit",
-    pricingNote: "Annulation a tout moment sans frais.",
-    footerTagline: "Analyses de vie personnelles avec une confidentialite par design.",
     backHome: "Accueil",
-    privacyPageTitle: "Politique de confidentialite",
-    privacyPageIntro:
-      "Cette page contient le texte officiel de politique de confidentialite pour Tempo.",
+    legalPageTitle: "Informations légales",
+    mentionsLegalesTitle: "Mentions légales",
+    privacyPolicySectionTitle: "Politique de confidentialité",
+    legalPublisherLabel: "Éditeur",
+    legalEmailLabel: "E-mail",
+    legalAppDescription: "Application mobile d'analyse de la localisation.",
+    legalIpLabel: "Propriété intellectuelle",
+    legalIpBody:
+      "L'ensemble de l'application et de son contenu est protégé par le droit d'auteur. Toute reproduction ou représentation, totale ou partielle, est interdite sans autorisation préalable.",
+    termsOfUseTitle: "Condition d'utilisation",
+    termsOfUseAcceptanceTitle: "Acceptation des conditions",
+    termsOfUseAcceptanceBody:
+      "En utilisant l'application Tempo, vous acceptez les présentes conditions d'utilisation et la politique de confidentialité. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser l'application.",
+    termsOfUseAuthorizedTitle: "Utilisation autorisée",
+    termsOfUseAuthorizedBody:
+      "L'application doit être utilisée conformément à sa finalité (suivi de localisation et analyses personnelles) et dans le respect des lois en vigueur. Toute utilisation abusive, frauduleuse ou contraire à l'ordre public est interdite.",
+    termsOfUseLiabilityTitle: "Responsabilité",
+    termsOfUseLiabilityBody:
+      "L'éditeur ne peut être tenu responsable des dommages directs ou indirects résultant de l'utilisation de l'application, notamment en cas de perte de données, d'interruption de service, ou de dysfonctionnement technique. L'utilisateur est seul responsable de l'utilisation qu'il fait de ses données personnelles.",
+    termsOfUseEstimatesTitle: "Estimations et incertitudes",
+    termsOfUseEstimatesBody:
+      "Toutes les valeurs présentes dans l'application, qu'il s'agisse des visites ou des mouvements (durée, position, heures de début et de fin), sont des estimations soumises à des incertitudes inhérentes aux technologies de géolocalisation et aux algorithmes de traitement. Ces valeurs ne doivent pas être considérées comme parfaitement exactes et ne peuvent en aucun cas être utilisées comme preuve dans un contexte légal, judiciaire ou administratif. L'utilisateur reconnaît et accepte que ces données sont fournies à titre indicatif uniquement.",
     ppDataCollectionTitle: "Collecte des donnees",
     ppDataCollectionBody:
       "Toutes vos donnees (localisation GPS, historique des deplacements et visites, categories personnalisees, preferences utilisateur) sont conservees uniquement en local sur votre appareil et ne sont pas accessibles a distance. Seules les informations suivantes sont conservees sur nos serveurs : votre email de connexion, l'etat de votre abonnement, la date de creation de votre compte et la date de votre derniere connexion. Ces donnees minimales sont necessaires pour gerer votre compte et votre abonnement.",
@@ -149,22 +148,28 @@ const i18n = {
 
 const screenshots = {
   en: [
+    { src: "assets/screen_EN/Synthesis_EN.png", label: "Summary" },
+    { src: "assets/screen_EN/Footprint_EN.png", label: "Footprint" },
     { src: "assets/screen_EN/Maps_EN.png", label: "Map" },
     { src: "assets/screen_EN/Your_Days_EN.png", label: "Your Days" },
-    { src: "assets/screen_EN/Synthesis_EN.png", label: "Summary" },
     { src: "assets/screen_EN/Trends_EN.png", label: "Trends" },
     { src: "assets/screen_EN/Movement_EN.png", label: "Movements" },
-    { src: "assets/screen_EN/Footprint_EN.png", label: "Footprint" },
+    { src: "assets/screen_EN/Metro-detail.png", label: "Metro detail" },
   ],
   fr: [
+    { src: "assets/screen_FR/Synthesis_FR.png", label: "Synthese" },
+    { src: "assets/screen_FR/Footprint_FR.png", label: "Empreinte" },
     { src: "assets/screen_FR/Maps_FR.png", label: "Carte" },
     { src: "assets/screen_FR/Your_Days_FR.png", label: "Vos Journees" },
-    { src: "assets/screen_FR/Synthesis_FR.png", label: "Synthese" },
     { src: "assets/screen_FR/Trends_FR.png", label: "Tendances" },
     { src: "assets/screen_FR/Movement_FR.png", label: "Deplacements" },
-    { src: "assets/screen_FR/Footprint_FR.png", label: "Empreinte" },
+    { src: "assets/screen_FR/Metro-detail.png", label: "Metro detail" },
   ],
 };
+
+let autoScrollFrame = null;
+let autoScrollPaused = false;
+let autoScrollEventsBound = false;
 
 function getLang() {
   const stored = localStorage.getItem("tempo-lang");
@@ -188,10 +193,10 @@ function setLang(lang) {
 
   const titleByLang = {
     en: document.location.pathname.includes("privacy")
-      ? "Tempo - Privacy Policy"
+      ? "Tempo - Legal information"
       : "Tempo - Your life analytics app",
     fr: document.location.pathname.includes("privacy")
-      ? "Tempo - Politique de confidentialite"
+      ? "Tempo - Informations légales"
       : "Tempo - Application d'analyse de vie",
   };
   document.title = titleByLang[lang];
@@ -206,9 +211,51 @@ function renderGallery(lang) {
   screenshots[lang].forEach((shot) => {
     const item = document.createElement("article");
     item.className = "shot";
-    item.innerHTML = `<img src="${shot.src}" alt="${shot.label}" loading="lazy" /><p>${shot.label}</p>`;
+    item.innerHTML = `<img src="${shot.src}" alt="${shot.label}" loading="lazy" />`;
     gallery.appendChild(item);
   });
+  startAutoScroll(gallery);
+}
+
+function bindAutoScrollPauseEvents(gallery) {
+  if (autoScrollEventsBound) return;
+  autoScrollEventsBound = true;
+
+  gallery.addEventListener("mouseenter", () => {
+    autoScrollPaused = true;
+  });
+  gallery.addEventListener("mouseleave", () => {
+    autoScrollPaused = false;
+  });
+  gallery.addEventListener("touchstart", () => {
+    autoScrollPaused = true;
+  }, { passive: true });
+  gallery.addEventListener("touchend", () => {
+    autoScrollPaused = false;
+  });
+}
+
+function startAutoScroll(gallery) {
+  if (autoScrollFrame) cancelAnimationFrame(autoScrollFrame);
+  bindAutoScrollPauseEvents(gallery);
+
+  const speedPxPerFrame = 0.35;
+
+  const tick = () => {
+    if (!autoScrollPaused) {
+      const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+      if (maxScroll > 0) {
+        if (gallery.scrollLeft >= maxScroll - 1) {
+          gallery.scrollLeft = 0;
+        } else {
+          gallery.scrollLeft += speedPxPerFrame;
+        }
+      }
+    }
+    autoScrollFrame = requestAnimationFrame(tick);
+  };
+
+  autoScrollFrame = requestAnimationFrame(tick);
 }
 
 const initialLang = getLang();

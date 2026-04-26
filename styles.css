@@ -188,19 +188,38 @@ h1 {
   padding: 1.2rem;
 }
 
+.feature-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0;
+}
+
+.feature-icon {
+  width: 1.9rem;
+  height: 1.9rem;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #eef6ff;
+  border: 1px solid var(--primary-light);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
 .card p {
   color: var(--muted);
 }
 
-.section-intro {
-  color: var(--muted);
-}
-
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
   gap: 1rem;
   margin-top: 1.2rem;
+  padding-bottom: 0.5rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .shot {
@@ -208,41 +227,13 @@ h1 {
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 0.7rem;
+  flex: 0 0 min(280px, 72vw);
 }
 
 .shot img {
   width: 100%;
   border-radius: 12px;
   display: block;
-}
-
-.shot p {
-  font-size: 0.88rem;
-  color: var(--muted);
-  margin: 0.6rem 0 0;
-}
-
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.price-card {
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 1.2rem;
-}
-
-.price-card.featured {
-  border-color: var(--primary-light);
-  box-shadow: 0 10px 24px rgba(33, 150, 243, 0.12);
-}
-
-.price {
-  font-size: 1.2rem;
-  font-weight: 700;
 }
 
 .small-note {
@@ -253,13 +244,47 @@ h1 {
   max-width: 820px;
 }
 
+.legal-major {
+  margin-top: 2.75rem;
+}
+
+.legal-major:first-of-type {
+  margin-top: 0;
+}
+
+.legal-major > h2 {
+  font-size: 1.35rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.legal .legal-block h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.45rem;
+}
+
+.legal-publisher {
+  padding: 0;
+  margin-bottom: 1.2rem;
+}
+
+.legal-publisher p {
+  margin: 0.35rem 0;
+}
+
+.legal-publisher a {
+  color: var(--primary-dark);
+}
+
 .legal-block {
   border-bottom: 1px solid var(--border);
   padding: 0.8rem 0 1.1rem;
 }
 
-.legal h2 {
-  margin-bottom: 0.2rem;
+.legal h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
 }
 
 .last-updated {
@@ -288,9 +313,7 @@ h1 {
 
 @media (max-width: 900px) {
   .hero-grid,
-  .cards,
-  .gallery,
-  .pricing-grid {
+  .cards {
     grid-template-columns: 1fr;
   }
 
