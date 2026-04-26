@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tempo - Your life analytics app</title>
+    <meta
+      name="description"
+      content="Tempo helps you understand where your time really goes with privacy-first personal analytics."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="index.html" aria-label="Tempo home">
+          <img src="assets/tempo-logo.png" alt="Tempo logo" />
+          <span>Tempo</span>
+        </a>
+        <div class="nav-links">
+          <a href="#features" data-i18n="navFeatures">Features</a>
+          <a href="#screenshots" data-i18n="navScreenshots">Screenshots</a>
+          <a href="#pricing" data-i18n="navPricing">Pricing</a>
+          <a href="privacy.html" data-i18n="navPrivacy">Privacy</a>
+          <a class="btn small" href="https://apps.apple.com/us/app/tempo-your-life-analytics/id6754218125" target="_blank" rel="noopener noreferrer" data-i18n="downloadCta">Download</a>
+          <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Change language">FR</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow" data-i18n="heroEyebrow">iOS app</p>
+            <h1 data-i18n="heroTitle">Take back control of your time.</h1>
+            <p class="lead" data-i18n="heroSubtitle">
+              Tempo automatically tracks your places and movements, then turns
+              them into clear life analytics.
+            </p>
+            <div class="hero-cta">
+              <a class="btn" href="https://apps.apple.com/us/app/tempo-your-life-analytics/id6754218125" target="_blank" rel="noopener noreferrer" data-i18n="downloadCta">
+                Download on the App Store
+              </a>
+              <a class="btn ghost" href="privacy.html" data-i18n="privacyCta">Read privacy policy</a>
+            </div>
+            <p class="trust" data-i18n="trustLine">
+              Your sensitive location history is stored locally on your device.
+            </p>
+          </div>
+          <div class="hero-visual">
+            <img src="assets/tempo-logo.png" alt="Tempo app icon" />
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2 data-i18n="featuresTitle">Why Tempo</h2>
+          <div class="cards">
+            <article class="card">
+              <h3 data-i18n="feature1Title">Automatic tracking</h3>
+              <p data-i18n="feature1Body">
+                Tempo records your movements and visits to build a complete
+                timeline of your days.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="feature2Title">Understand routines</h3>
+              <p data-i18n="feature2Body">
+                Explore daily and long-term trends to see where your time goes.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="feature3Title">Transport footprint</h3>
+              <p data-i18n="feature3Body">
+                Estimate CO2 emissions from trips and test reduction scenarios.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="feature4Title">Privacy-first</h3>
+              <p data-i18n="feature4Body">
+                You keep control with local storage, export tools, and account
+                deletion options.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="screenshots" class="section alt">
+        <div class="container">
+          <h2 data-i18n="screensTitle">App screenshots</h2>
+          <p class="section-intro" data-i18n="screensIntro">
+            The gallery changes automatically depending on your selected language.
+          </p>
+          <div class="gallery" id="screens-gallery"></div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="container">
+          <h2 data-i18n="pricingTitle">Start free. Upgrade when you want deeper insights.</h2>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <h3 data-i18n="freeTitle">Free</h3>
+              <ul>
+                <li data-i18n="free1">Core map and day-level tracking</li>
+                <li data-i18n="free2">Up to 6 place categories</li>
+                <li data-i18n="free3">Up to 6 movement categories</li>
+              </ul>
+            </article>
+            <article class="price-card featured">
+              <h3 data-i18n="premiumTitle">Premium</h3>
+              <p class="price" data-i18n="premiumPrice">$1.99/month</p>
+              <ul>
+                <li data-i18n="premium1">Detailed Summary and Trends analytics</li>
+                <li data-i18n="premium2">Transport footprint analysis</li>
+                <li data-i18n="premium3">Data export tools</li>
+                <li data-i18n="premium4">Unlimited categories</li>
+              </ul>
+              <a class="btn" href="https://apps.apple.com/us/app/tempo-your-life-analytics/id6754218125" target="_blank" rel="noopener noreferrer" data-i18n="trialCta">Start free trial</a>
+            </article>
+          </div>
+          <p class="small-note" data-i18n="pricingNote">Cancel anytime without fees.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Tempo</strong>
+          <p data-i18n="footerTagline">Personal life analytics with privacy by design.</p>
+        </div>
+        <div>
+          <a href="privacy.html" data-i18n="navPrivacy">Privacy</a>
+          <a href="mailto:tempo.lifeanalytics@gmail.com">tempo.lifeanalytics@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
