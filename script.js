@@ -47,13 +47,16 @@ const i18n = {
       "All values present in the application, whether for visits or movements (duration, position, start and end times), are estimates subject to uncertainties inherent in geolocation technologies and processing algorithms. These values should not be considered perfectly accurate and cannot under any circumstances be used as evidence in a legal, judicial, or administrative context. The user acknowledges and accepts that this data is provided for informational purposes only.",
     ppDataCollectionTitle: "Data Collection",
     ppDataCollectionBody:
-      "All your data (GPS location, travel and visit history, personalized categories, user preferences) is stored locally on your device only and is not accessible remotely. Only the following information is stored on our servers: your login email, your subscription status, your account creation date, and your last login date. This minimal data is necessary to manage your account and subscription.",
+      "Your data (GPS location, travel and visit history, personalized categories, user preferences) is primarily stored on your device and is not remotely accessible by Tempo. Only the following information is stored on our servers: your login email, your subscription status, your account creation date, and your last login date. This minimal data is necessary to manage your account and subscription. For certain map features (map display, GPS trace correction), anonymized geographic coordinates may be temporarily transmitted to our provider Mapbox, with no timestamps or personal identifiers — see the \"Map providers\" section.",
     ppDataUsageTitle: "Data Usage",
     ppDataUsageBody:
-      "Your location data is used locally to: provide real-time location tracking features, generate personal statistics and analytics, create interactive maps, and enable export of your personal data. The minimal data stored on our servers is used only to manage your account and subscription.",
+      "Your location data is used on your device to: provide location tracking, personal statistics and analytics, interactive maps, GPS trace correction (map matching) when applicable to a movement, and data export. Map matching sends Mapbox only sampled, anonymized coordinates (no timestamps) to align a trace with the road network; the result is then stored locally. The minimal data on our servers is used only to manage your account and subscription.",
     ppDataSharingTitle: "Data Sharing",
     ppDataSharingBody:
-      "Your location, travel, and visit data is never shared, sold, or rented. Only the minimal data necessary to manage your account and subscription may be shared with our technical providers solely to ensure authentication and subscription management functionality. These providers are subject to the same data protection obligations.",
+      "Your location, travel, and visit data is never sold or rented. It is not remotely accessible to Tempo. Only the minimal data necessary for your account and subscription may be shared with our authentication and subscription providers. For maps and map matching, anonymized geographic coordinates (no account identifier, no movement identifier, no timestamps) may be transmitted to Mapbox, Inc. solely to provide these features. Mapbox does not receive your full history.",
+    ppMapProvidersTitle: "Map providers",
+    ppMapProvidersBody:
+      "Map display and GPS trace correction (map matching) rely on Mapbox, Inc. (United States). When this service is called, Tempo transmits only sampled geographic coordinates (up to 100 points per request) and, where applicable, a GPS accuracy indication — anonymized data that does not identify you: no email address, no account identifier, no movement identifier, and no timestamps. Mapbox therefore does not receive the date or time of your trips. Corrected traces are stored only on your device. Mapbox processes this data under its privacy policy (https://www.mapbox.com/legal/privacy). Transfers outside the European Union are governed by applicable contractual safeguards.",
     ppSecurityTitle: "Security",
     ppSecurityBody:
       "Your location data benefits from your operating system's native security. The minimal data stored on our servers is protected by: data encryption in transit and at rest, secure authentication, restricted access to sensitive data, and secure backup on certified servers.",
@@ -65,11 +68,14 @@ const i18n = {
       "Your location data is retained until you delete it. You can delete it at any time directly from the application. The minimal data necessary to manage your account and subscription is retained as long as your account is active. You can request account deletion at any time. Deleted data is permanently erased from our servers within 24 hours.",
     ppCookiesTitle: "Cookies and Similar Technologies",
     ppCookiesBody:
-      "This application uses local storage technologies (AsyncStorage) to save your preferences and improve your experience. This data remains on your device and is not transmitted to third parties.",
+      "This application uses local storage technologies (AsyncStorage) to save your preferences and improve your experience. This data remains on your device and is not transmitted to third parties. Map display and map matching may involve Mapbox as described above.",
     ppChangesTitle: "Policy Changes",
     ppChangesBody:
       "We reserve the right to modify this privacy policy. Important changes will be notified to you via the application. The date of last update is indicated at the bottom of this page.",
-    ppLastUpdated: "Last updated: December 16, 2025",
+    ppContactTitle: "Contact",
+    ppContactBody:
+      "For any questions regarding the privacy policy, or to exercise your GDPR rights, you can contact us:",
+    ppLastUpdated: "Last updated: May 30, 2026",
   },
   fr: {
     navLegal: "Informations légales",
@@ -118,31 +124,37 @@ const i18n = {
     termsOfUseEstimatesTitle: "Estimations et incertitudes",
     termsOfUseEstimatesBody:
       "Toutes les valeurs présentes dans l'application, qu'il s'agisse des visites ou des mouvements (durée, position, heures de début et de fin), sont des estimations soumises à des incertitudes inhérentes aux technologies de géolocalisation et aux algorithmes de traitement. Ces valeurs ne doivent pas être considérées comme parfaitement exactes et ne peuvent en aucun cas être utilisées comme preuve dans un contexte légal, judiciaire ou administratif. L'utilisateur reconnaît et accepte que ces données sont fournies à titre indicatif uniquement.",
-    ppDataCollectionTitle: "Collecte des donnees",
+    ppDataCollectionTitle: "Collecte des données",
     ppDataCollectionBody:
-      "Toutes vos donnees (localisation GPS, historique des deplacements et visites, categories personnalisees, preferences utilisateur) sont conservees uniquement en local sur votre appareil et ne sont pas accessibles a distance. Seules les informations suivantes sont conservees sur nos serveurs : votre email de connexion, l'etat de votre abonnement, la date de creation de votre compte et la date de votre derniere connexion. Ces donnees minimales sont necessaires pour gerer votre compte et votre abonnement.",
-    ppDataUsageTitle: "Utilisation des donnees",
+      "Vos données (localisation GPS, historique des déplacements et visites, catégories personnalisées, préférences utilisateur) sont conservées en priorité sur votre appareil et ne sont pas accessibles à distance par Tempo. Seules les informations suivantes sont conservées sur nos serveurs : votre email de connexion, l'état de votre abonnement, la date de création de votre compte et la date de votre dernière connexion. Ces données minimales sont nécessaires pour gérer votre compte et votre abonnement. Pour certaines fonctionnalités cartographiques (affichage des cartes, correction des traces GPS), des coordonnées géographiques anonymisées peuvent être transmises temporairement à notre prestataire Mapbox, sans horodatage ni identifiant personnel — voir la section « Prestataires cartographiques ».",
+    ppDataUsageTitle: "Utilisation des données",
     ppDataUsageBody:
-      "Vos donnees de localisation sont utilisees localement pour : fournir les fonctionnalites de suivi de localisation en temps reel, generer des statistiques et analyses personnelles, creer des cartes interactives, et permettre l'export de vos donnees personnelles. Les donnees minimales stockees sur nos serveurs sont utilisees uniquement pour gerer votre compte et votre abonnement.",
-    ppDataSharingTitle: "Partage des donnees",
+      "Vos données de localisation sont utilisées sur votre appareil pour : le suivi de localisation, les statistiques et analyses personnelles, les cartes interactives, la correction des traces GPS (map matching) lorsque cela s'applique à un déplacement, et l'export de vos données. Le map matching consiste à envoyer à Mapbox uniquement des coordonnées échantillonnées et anonymisées (sans horodatage) afin d'aligner une trace sur le réseau routier ; le résultat est ensuite enregistré localement. Les données minimales stockées sur nos serveurs servent uniquement à gérer votre compte et votre abonnement.",
+    ppDataSharingTitle: "Partage des données",
     ppDataSharingBody:
-      "Vos donnees de localisation, deplacements et visites ne sont jamais partagees, vendues ou louees. Seules les donnees minimales necessaires a la gestion de votre compte et de votre abonnement peuvent etre partagees avec nos prestataires techniques uniquement pour assurer le fonctionnement de l'authentification et de la gestion des abonnements. Ces prestataires sont soumis aux memes obligations de protection des donnees.",
-    ppSecurityTitle: "Securite",
+      "Vos données de localisation, déplacements et visites ne sont jamais vendues ni louées. Elles ne sont pas accessibles à Tempo à distance. Seules les données minimales nécessaires à la gestion de votre compte et de votre abonnement peuvent être partagées avec nos prestataires d'authentification et d'abonnement. Pour les cartes et le map matching, des coordonnées géographiques anonymisées (sans identifiant de compte, sans identifiant de déplacement, sans horodatage) peuvent être transmises à Mapbox, Inc., uniquement pour fournir ces fonctionnalités. Mapbox ne reçoit pas votre historique complet.",
+    ppMapProvidersTitle: "Prestataires cartographiques",
+    ppMapProvidersBody:
+      "L'affichage des cartes et la correction des traces GPS (map matching) s'appuient sur Mapbox, Inc. (États-Unis). Lors d'un appel à ce service, Tempo transmet uniquement des coordonnées géographiques échantillonnées (jusqu'à 100 points par requête) et, le cas échéant, une indication de précision GPS — des données anonymisées qui ne permettent pas de vous identifier : pas d'adresse e-mail, pas d'identifiant de compte, pas d'identifiant de déplacement, et aucun horodatage. Mapbox ne reçoit donc ni la date ni l'heure de vos déplacements. Les traces corrigées sont enregistrées uniquement sur votre appareil. Mapbox traite ces données conformément à sa politique de confidentialité (https://www.mapbox.com/legal/privacy). Les transferts hors Union européenne sont encadrés par les garanties contractuelles applicables.",
+    ppSecurityTitle: "Sécurité",
     ppSecurityBody:
-      "Vos donnees de localisation beneficient de la securite native de votre systeme d'exploitation. Les donnees minimales stockees sur nos serveurs sont protegees par : chiffrement des donnees en transit et au repos, authentification securisee, acces restreint aux donnees sensibles, et sauvegarde securisee sur des serveurs certifies.",
+      "Vos données de localisation bénéficient de la sécurité native de votre système d'exploitation. Les données minimales stockées sur nos serveurs sont protégées par : chiffrement des données en transit et au repos, authentification sécurisée, accès restreint aux données sensibles, et sauvegarde sécurisée sur des serveurs certifiés.",
     ppRightsTitle: "Vos droits",
     ppRightsBody:
-      "Conformement au RGPD, vous disposez des droits suivants : acces a vos donnees, rectification, suppression, limitation du traitement, portabilite (export de vos donnees), et opposition au traitement. Vous pouvez exercer ces droits directement dans l'application (export des donnees, suppression du compte) ou en nous contactant.",
-    ppRetentionTitle: "Duree de conservation",
+      "Conformément au RGPD, vous disposez des droits suivants : accès à vos données, rectification, suppression, limitation du traitement, portabilité (export de vos données), et opposition au traitement. Vous pouvez exercer ces droits directement dans l'application (export des données, suppression du compte) ou en nous contactant.",
+    ppRetentionTitle: "Durée de conservation",
     ppRetentionBody:
-      "Vos donnees de localisation sont conservees tant que vous ne les supprimez pas. Vous pouvez les supprimer a tout moment directement depuis l'application. Les donnees minimales necessaires a la gestion de votre compte et de votre abonnement sont conservees tant que votre compte est actif. Vous pouvez demander la suppression de votre compte a tout moment. Les donnees supprimees sont definitivement effacees de nos serveurs dans un delai de 24 heures.",
+      "Vos données de localisation sont conservées tant que vous ne les supprimez pas. Vous pouvez les supprimer à tout moment directement depuis l'application. Les données minimales nécessaires à la gestion de votre compte et de votre abonnement sont conservées tant que votre compte est actif. Vous pouvez demander la suppression de votre compte à tout moment. Les données supprimées sont définitivement effacées de nos serveurs dans un délai de 24 heures.",
     ppCookiesTitle: "Cookies et technologies similaires",
     ppCookiesBody:
-      "Cette application utilise des technologies de stockage local (AsyncStorage) pour sauvegarder vos preferences et ameliorer votre experience. Ces donnees restent sur votre appareil et ne sont pas transmises a des tiers.",
+      "Cette application utilise des technologies de stockage local (AsyncStorage) pour sauvegarder vos préférences et améliorer votre expérience. Ces données restent sur votre appareil et ne sont pas transmises à des tiers. L'affichage des cartes et le map matching peuvent impliquer Mapbox comme indiqué ci-dessus.",
     ppChangesTitle: "Modifications de la politique",
     ppChangesBody:
-      "Nous nous reservons le droit de modifier cette politique de confidentialite. Les modifications importantes vous seront notifiees via l'application. La date de derniere mise a jour est indiquee en bas de cette page.",
-    ppLastUpdated: "Derniere mise a jour : 16 decembre 2025",
+      "Nous nous réservons le droit de modifier cette politique de confidentialité. Les modifications importantes vous seront notifiées via l'application. La date de dernière mise à jour est indiquée en bas de cette page.",
+    ppContactTitle: "Contact",
+    ppContactBody:
+      "Pour toute question concernant la politique de confidentialité, ou pour exercer vos droits RGPD, vous pouvez nous contacter :",
+    ppLastUpdated: "Dernière mise à jour : 30 mai 2026",
   },
 };
 
